@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Clocky</string>
+
+    <string name="task_starting">Début de la mise à jour</string>
+    <string name="task_canceled">Mise à jour annulée</string>
+    <string name="task_working">Mise à jour en cours</string>
+    <string name="task_problem">Problème lors de la mise à jour</string>
+
+    <string name="alarm_conf">arbz.clocky.alarm_cfg</string>
+    <string name="calendar_link_label">Lien du calendrier :</string>
+    <string name="ics_link_hint">https://lien_ics</string>
+
+    <string name="alarm_ringtone_label">Musique de l\'alarme :</string>
+    <string name="alarm_quantity_label">Nombre d\'alarmes :</string>
+    <string name="alarm_interval_label">Intervalle entre les alarmes :</string>
+    <string name="alarm_begin_label">Première alarme :</string>
+
+    <string name="alarmQuantityPickerDialog_title">Nombre d\'alarmes</string>
+    <string name="numberPickerDialog_message">Choisissez une valeur</string>
+
+    <string name="alarm_picker_ok">OK</string>
+    <string name="alarm_picker_cancel">ANNULER</string>
+    <string name="alarm_picker_null_value">Vous ne pouvez pas entrer une valeur nulle !</string>
+
+    <string name="parsing_alarms_exception">Problème lors de la récupération des alarmes</string>
+
+    <string name="alarm_ringtone_selection_title">Selectionnez la musique de l\'alarme :</string>
+
+    <string name="default_ringtone_name">Défaut</string>
+    <string name="dialog_quantity_label">Nombre d\'alarmes :</string>
+
+    <string name="alarm_ringtone_activated">Sonnerie activée</string>
+    <string name="alarm_ringtone_only">Sonnerie uniquement</string>
+
+    <string name="alarm_vibrator_activated">Vibreur activé</string>
+    <string name="alarm_vibrator_only">Vibreur uniquement</string>
+    <string name="problem_when_writing">Problème lors de la sauvegarde</string>
+    <string name="first_course_time">firstCourseTime</string>
+
+    <string name="title_activity_welcome">WelcomeActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string name="btn_start">COMMENCER</string>
+    <string name="btn_next">SUIVANT</string>
+
+</resources>

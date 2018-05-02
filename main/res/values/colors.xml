@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2A3033</color>
+    <color name="colorPrimaryDark">#151B1E</color>
+    <color name="colorAccent">#7DC6BF</color>
+
+    <color name="backgroundColor">@color/colorPrimaryDark</color>
+    <color name="selectedBackgroundColor">@color/colorPrimary</color>
+    <color name="nextDayBackgroundColor">#607d8b</color>
+
+    <color name="vibratorOnColor">@color/colorAccent</color>
+    <color name="vibratorOffColor">@color/divider</color>
+
+    <color name="divider">@android:color/darker_gray</color>
+    <color name="tab_selected">@android:color/white</color>
+    <color name="tab_unselected">@android:color/darker_gray</color>
+    <color name="transparent">@android:color/transparent</color>
+
+    <color name="black_overlay">#66000000</color>
+
+    <color name="dot_active">@color/colorAccent</color>
+    <color name="dot_inactive">@color/colorPrimary</color>
+</resources>

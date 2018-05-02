@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/alarm_link_layout"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?attr/selectableItemBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/alarm_link_label"
+            android:text="@string/calendar_link_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/alarm_config_padding"
+            android:paddingStart="@dimen/alarm_config_padding"
+            android:paddingEnd="@dimen/alarm_config_padding"
+            android:textSize="@dimen/alarm_config_title_text_size"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/alarm_config_padding"
+            android:paddingStart="@dimen/alarm_config_inner_padding"
+            android:paddingEnd="@dimen/alarm_config_padding"
+            android:layout_marginBottom="@dimen/alarm_config_padding">
+
+            <ImageView
+                android:id="@+id/ic_alarm_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingStart="0dp"
+                android:paddingEnd="10dp"
+                android:src="@drawable/ic_ics_link"
+                android:tint="@color/divider" />
+
+            <arbz.clocky.custom.CustomEditText
+                android:id="@+id/alarm_link_editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/ic_alarm_link"
+                android:hint="@string/ics_link_hint"
+                android:text="https://synapses.agroparistech.fr/calendar/ical/09a80131495c4b67571ae635f3148ad2d9b3b8244ddc83d3516cc1afce0cccc4"
+                android:cursorVisible="false"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:background="@android:color/transparent"
+                android:textSize="@dimen/alarm_config_text_size" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include layout="@layout/divider_layout" />
+
+    <LinearLayout
+        android:id="@+id/ringtone_choice_layout"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?attr/selectableItemBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/alarm_ringtone_label"
+            android:text="@string/alarm_ringtone_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/alarm_config_padding"
+            android:paddingStart="@dimen/alarm_config_padding"
+            android:paddingEnd="@dimen/alarm_config_padding"
+            android:textSize="@dimen/alarm_config_title_text_size"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/alarm_config_padding"
+            android:paddingStart="@dimen/alarm_config_inner_padding"
+            android:paddingEnd="@dimen/alarm_config_padding"
+            android:layout_marginBottom="@dimen/alarm_config_padding">
+
+            <ImageView
+                android:id="@+id/ic_alarm_ringtone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingStart="0dp"
+                android:paddingEnd="10dp"
+                android:src="@drawable/ic_alarm_ringtone"
+                android:tint="@color/divider" />
+
+            <TextView
+                android:id="@+id/alarm_ringtone_choice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/ic_alarm_ringtone"
+                android:textSize="@dimen/alarm_config_text_size"
+                android:text="Time Up" />
+
+            <arbz.clocky.custom.CustomImageView
+                android:id="@+id/ic_alarm_vibrator_only"
+                android:src="@drawable/alarm_mute_indicator"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@+id/ic_alarm_vibrator"
+                android:paddingEnd="10dp"
+                android:tint="@color/divider" />
+
+            <arbz.clocky.custom.CustomImageView
+                android:id="@+id/ic_alarm_vibrator"
+                android:src="@drawable/alarm_vibrator_indicator"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/alarm_config_padding"
+                android:tint="@color/divider" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include layout="@layout/divider_layout" />
+
+    <LinearLayout
+        android:id="@+id/alarm_quantity_layout"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?attr/selectableItemBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/alarm_quantity_label"
+            android:text="@string/alarm_quantity_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/alarm_config_padding"
+            android:paddingStart="@dimen/alarm_config_padding"
+            android:paddingEnd="@dimen/alarm_config_padding"
+            android:textSize="@dimen/alarm_config_title_text_size"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/alarm_config_padding"
+            android:paddingStart="@dimen/alarm_config_inner_padding"
+            android:paddingEnd="@dimen/alarm_config_padding"
+            android:layout_marginBottom="@dimen/alarm_config_padding">
+
+            <ImageView
+                android:id="@+id/ic_alarm_quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingStart="0dp"
+                android:paddingEnd="10dp"
+                android:src="@drawable/ic_alarm_quantity"
+                android:tint="@color/divider" />
+
+            <TextView
+                android:id="@+id/alarm_quantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/ic_alarm_quantity"
+                android:text="3 alarmes"
+                android:textSize="@dimen/alarm_config_text_size" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include layout="@layout/divider_layout" />
+
+    <LinearLayout
+        android:id="@+id/alarm_interval_layout"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?attr/selectableItemBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/alarm_interval_label"
+            android:text="@string/alarm_interval_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/alarm_config_padding"
+            android:paddingStart="@dimen/alarm_config_padding"
+            android:paddingEnd="@dimen/alarm_config_padding"
+            android:textSize="@dimen/alarm_config_title_text_size"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/alarm_config_padding"
+            android:paddingStart="@dimen/alarm_config_inner_padding"
+            android:paddingEnd="@dimen/alarm_config_padding"
+            android:layout_marginBottom="@dimen/alarm_config_padding">
+
+            <ImageView
+                android:id="@+id/ic_alarm_interval"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingStart="0dp"
+                android:paddingEnd="10dp"
+                android:src="@drawable/ic_alarm_interval"
+                android:tint="@color/divider" />
+
+            <TextView
+                android:id="@+id/alarm_interval"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/ic_alarm_interval"
+                android:textSize="@dimen/alarm_config_text_size"
+                android:text="15 minutes" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include layout="@layout/divider_layout" />
+
+    <LinearLayout
+        android:id="@+id/alarm_begin_layout"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?attr/selectableItemBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/alarm_begin_label"
+            android:text="@string/alarm_begin_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/alarm_config_padding"
+            android:paddingStart="@dimen/alarm_config_padding"
+            android:paddingEnd="@dimen/alarm_config_padding"
+            android:textSize="@dimen/alarm_config_title_text_size"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/alarm_config_padding"
+            android:paddingStart="@dimen/alarm_config_inner_padding"
+            android:paddingEnd="@dimen/alarm_config_padding"
+            android:layout_marginBottom="@dimen/alarm_config_padding">
+
+            <ImageView
+                android:id="@+id/ic_alarm_begin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingStart="0dp"
+                android:paddingEnd="10dp"
+                android:src="@drawable/ic_alarme_begin"
+                android:tint="@color/divider" />
+
+            <TextView
+                android:id="@+id/alarm_begin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/ic_alarm_begin"
+                android:textSize="@dimen/alarm_config_text_size"
+                android:text="90 minutes avant le premier cours" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

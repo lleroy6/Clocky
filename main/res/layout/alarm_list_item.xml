@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/selectedBackgroundColor">
+
+    <ImageView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/alarm_icon"
+        android:src="@drawable/ic_horloge_alarm_list"
+        android:tint="@color/divider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:paddingStart="?android:attr/expandableListPreferredChildPaddingLeft"
+        android:paddingEnd="10dp"/>
+
+    <TextView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/alarm_hour"
+        android:layout_toEndOf="@+id/alarm_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:fontFamily="sans-serif-light"
+        android:text="06:45"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <Switch
+        android:id="@+id/alarm_switch"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_toEndOf="@+id/alarm_hour"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="10dp"/>
+
+</RelativeLayout>

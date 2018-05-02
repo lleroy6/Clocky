@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/backgroundColor" >
+
+    <TextView
+        android:id="@+id/welc_conf_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/alarm_config_padding"
+        android:text="Vos préférences sont à configurer dans l'onglet paramètres"
+        android:lineSpacingExtra="8sp"
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.Medium" />
+
+    <ImageView
+        android:src="@drawable/welcome_config_img"
+        android:layout_width="250dp"
+        android:layout_height="300dp"
+        android:layout_margin="@dimen/alarm_config_padding" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/welc_ringonte_on"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:src="@drawable/ic_alarm_ringtone_on"
+                android:tint="@color/colorAccent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=": Sonnerie activée"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/welc_ringtone_off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/welc_ringonte_on"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:src="@drawable/ic_alarm_ringtone_off"
+                android:tint="@color/divider"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=": Sonnerie désactivée"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/welc_vibrator_on"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/welc_ringtone_off"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:src="@drawable/ic_alarm_vibrator"
+                android:tint="@color/colorAccent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=": Vibreur activé"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/welc_vibrator_on"
+            android:layout_toEndOf="@+id/welc_ringtone_off"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:src="@drawable/ic_alarm_vibrator_off"
+                android:tint="@color/divider"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=": Vibreur désactivé"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

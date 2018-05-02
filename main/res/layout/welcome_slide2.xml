@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/backgroundColor">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/alarm_config_padding"
+        android:layout_marginBottom="@dimen/alarm_config_padding"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:lineSpacingExtra="8sp"
+        android:text="Clocky configure automatiquement les alarmes de la semaine en fonction de votre calendrier et de vos préférences :"
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.Medium" />
+
+    <ImageView
+        android:id="@+id/wel_alarmlist_img"
+        android:layout_width="250dp"
+        android:layout_height="300dp"
+        android:src="@drawable/welcome_alarmlist_img"
+        android:layout_marginBottom="@dimen/alarm_config_padding"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:src="@drawable/ic_next_day"
+            android:tint="@color/colorAccent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=": prochain jour de la semaine"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/alarm_config_padding"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:text="Une mise à jour du calendrier est effectuée automatiquement tous les soirs"
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.Small"
+        android:lines="2" />
+</LinearLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/backgroundColor">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/alarm_config_padding"
+        android:text="Sélectionner un jour de la semaine permet d'afficher l'heure des alarmes programmées : "
+        android:lineSpacingExtra="8sp"
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.Medium" />
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="@dimen/alarm_config_padding"
+        android:src="@drawable/welcome_alarmlist_expanded" />
+
+    <include layout="@layout/divider_layout" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/alarm_config_padding"
+        android:gravity="center_vertical" >
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Activé"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:layout_marginStart="@dimen/alarm_config_padding"
+            android:text="Permet d'activer/désactiver toutes les alarmes d'un jour donné"
+            android:textAlignment="viewStart" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/alarm_config_padding"
+        android:gravity="center_vertical" >
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:checked="true" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:layout_marginStart="@dimen/alarm_config_padding"
+            android:text="Permet d'activer/désactiver une alarme d'un jour donné"
+            android:textAlignment="textStart" />
+    </LinearLayout>
+
+    <include layout="@layout/divider_layout" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/alarm_config_padding"
+        android:layout_marginStart="@dimen/alarm_config_padding"
+        android:layout_marginEnd="@dimen/alarm_config_padding"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:layout_width="111dp"
+            android:layout_height="106dp"
+            android:src="@drawable/shakemov_img"
+            android:tint="@color/colorAccent" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Secouer le téléphone sur les côtés active/désactive toutes les alarmes de la semaine"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Secouer le téléphone vers l'avant ou swiper de haut en bas sur la liste des alarmes déclenche la mise à jour du calendrier"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/welcome_maj" />
+</LinearLayout>

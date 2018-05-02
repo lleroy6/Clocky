@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/backgroundColor" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/ic_launcher_headless"
+            android:src="@drawable/ic_launcher_headless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"/>
+
+        <ImageView
+            android:id="@+id/ic_launcher_hammers"
+            android:src="@drawable/ic_launcher_hammers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:id="@+id/ic_launcher_hour"
+            android:src="@drawable/ic_launcher_hour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:id="@+id/ic_launcher_minute"
+            android:src="@drawable/ic_launcher_minute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/welc_conf_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/alarm_config_padding"
+        android:text="Afin de commencer, entrez le lien de votre calendrier :"
+        android:lineSpacingExtra="8sp"
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.Medium" />
+
+    <EditText
+        android:id="@+id/welc_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cursorVisible="false"
+        android:text="https://synapses.agroparistech.fr/calendar/ical/09a80131495c4b67571ae635f3148ad2d9b3b8244ddc83d3516cc1afce0cccc4"
+        android:singleLine="true"
+        android:layout_margin="@dimen/alarm_config_padding"/>
+</LinearLayout>

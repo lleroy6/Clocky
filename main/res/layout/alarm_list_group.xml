@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/alarm_group_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/alarm_group_padding">
+
+        <TextView
+            android:id="@+id/alarm_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:fontFamily="sans-serif-light"
+            android:paddingStart="@dimen/alarm_group_padding"
+            android:text="LUN 28/03"
+            android:textAllCaps="true"
+            android:textSize="40sp" />
+        
+        <ImageView
+            android:id="@+id/alarm_nextday_icon"
+            android:src="@drawable/ic_next_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/alarm_day"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:visibility="invisible"
+            android:tint="@color/colorAccent" />
+
+        <CheckBox
+            android:id="@+id/alarm_checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:checked="true"
+            android:focusable="false"
+            android:paddingEnd="@dimen/alarm_group_padding"
+            android:text="Activé" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/alarm_resume"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:fontFamily="sans-serif-light"
+            android:paddingBottom="10dp"
+            android:paddingStart="@dimen/alarm_group_padding"
+            android:text="3 alarmes - cours à 8h00"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/alarm_group_expander"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:paddingEnd="@dimen/alarm_group_padding"
+            android:src="@drawable/expandable_group_indicator"
+            android:tint="@color/divider" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/alarm_group_divider"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@drawable/list_divider"
+        android:orientation="vertical" />
+</LinearLayout>
